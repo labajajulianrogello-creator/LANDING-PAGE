@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSU-MCEST Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="http://msumcest.edu.ph/" target="_blank">Home</a></li>
+      <li><a href="http://msumcest.edu.ph/about/" target="_blank">About</a></li>
+      <li><a href="http://msumcest.edu.ph/contact/" target="_blank">Contact</a></li>
+    </ul>
+
+    <form class="search-form" action="http://msumcest.edu.ph/" target="_blank">
+      <input type="search" placeholder="Search" name="q">
+    </form>
+  </nav>
+</header>
+
+<main class="hero-section">
+
+  <div class="slides">
+    <div class="slide s1"></div>
+    <div class="slide s2"></div>
+    <div class="slide s3"></div>
+  </div>
+
+  <div class="hero-text hidden">
+    <h1>MSU-MCEST: Excellence in Education</h1>
+    <p>Empowering Students with Knowledge, Innovation, and Skills for a Brighter Future</p>
+
+    <div class="btn-group">
+      <a href="http://msumcest.edu.ph/" target="_blank" class="btn btn-primary">
+        Visit Website
+      </a>
+    </div>
+  </div>
+
+  <div class="side-bars">
+    <div></div><div></div><div></div><div></div><div></div>
+  </div>
+
+  <div class="side-dots">
+    <div></div><div></div>
+  </div>
+
+</main>
+
+<section class="info-section">
+  <h2>About MSU-MCEST</h2>
+  <p>
+    MSU-MCEST is a premier public institution specializing in science,
+    technology, and innovation in the Philippines.
+  </p>
+
+  <div class="cards">
+    <div class="card hidden">Skilled Faculty with industry experience</div>
+    <div class="card hidden">Certified Quality Education</div>
+    <div class="card hidden">Hands-on Learning Programs</div>
+    <div class="card hidden">Innovation and Research Focus</div>
+  </div>
+</section>
+
+<footer>
+
+  <div class="footer-cta hidden">
+    <h2>Start Your Journey</h2>
+    <p>Join excellence today.</p>
+    <a href="http://msumcest.edu.ph/" target="_blank" class="btn btn-primary">
+      Apply Now
+    </a>
+  </div>
+
+  <div class="footer-container hidden">
+    <div class="footer-col">
+      <h3>MSU-MCEST</h3>
+      <p>Science and technology institution.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>+63 935 806 6913</p>
+      <p>secretary.msat@msu.edu.ph</p>
+      <p>Maigo, Lanao del Norte</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Stay Connected</h3>
+      <a href="https://www.facebook.com/MSUMaigoCIPP" target="_blank">Facebook</a><br>
+      <a href="#">Twitter</a><br>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 MSU-MCEST | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
